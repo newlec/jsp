@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 	<header id="header">
 
 		<div class="content-container">
@@ -43,7 +44,12 @@
 						<h1 class="hidden">회원메뉴</h1>
 						<ul>
 							<li><a href="/index.html">HOME</a></li>
-							<li><a href="/member/login.html">로그인</a></li>
+							<c:if test="${empty sessionScope.userName}">
+                            <li><a href="/member/login">로그인</a></li>
+                            </c:if>
+                            <c:if test="${not empty sessionScope.userName}">
+                            <li><a href="/member/logout">로그아웃</a></li>
+                            </c:if>
 							<li><a href="/member/agree.html">회원가입</a></li>
 						</ul>
 					</nav>
@@ -52,7 +58,7 @@
 						<h1 class="hidden">고객메뉴</h1>
 						<ul class="linear-layout">
 							<li><a href="/member/home"><img src="/images/txt-mypage.png" alt="마이페이지" /></a></li>
-							<li><a href="/notice/list.html"><img src="/images/txt-customer.png" alt="고객센터" /></a></li>
+							<li><a href="/notice/list"><img src="/images/txt-customer.png" alt="고객센터" /></a></li>
 						</ul>
 					</nav>
 

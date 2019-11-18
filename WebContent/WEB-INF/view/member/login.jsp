@@ -182,7 +182,7 @@
                             </ul>
                             
                             <div class="login-btn-box">
-                                <input type="hidden" name="" value="" />
+                                <input type="hidden" name="returnUrl" value="${returnUrl}" />
                                 <input type="submit" class="btn login-btn"/>
                             </div>
                             <ul class="login-option">
