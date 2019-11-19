@@ -1,84 +1,22 @@
-@charset "UTF-8";
+@import url(layout2.css);
 
-#header{
-	/* width: 100%; */
-	--width: 100%;
-	height: 70px;
-	--overflow: hidden;
-	background: yellow;
+/* 콘텐츠를 수납하는 가구를 꾸미는 곳 */
+
+body{
+	
+	list-style: decimal;
+
+	font-family: 돋움, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #979797;
 }
 
-#header>div{
-	width:960px;
-	height:100%;
-	margin-left:auto;
-	margin-right:auto;
-	background: #0000ff20;
-	text-align: center;
+/* --- header -------------------------------------- */
+#logo{
+    display: inline-block;
+    width:182px;
+    height: 35px;
+    background: url(../images/logo.png) no-repeat left top;
+    text-indent: -999px;
+    overflow: hidden;
 }
-
-#visual{
-	height: 171px;
-	background: gray;	
-	position: relative;
-}
-
-	#visual>div{
-		width:960px;
-		height:100%;
-		margin-left:auto;
-		margin-right:auto;
-		background: #0000ff40;
-		text-align: center;
-	}
-
-#body{
-	min-height: 300px;
-	
-	background: blue;	
-}
-
-	#body>div{	
-		border:1px solid red;
-		width:960px;		
-		min-height:inherit;
-		margin-left:auto;
-		margin-right:auto;
-		background: #ff00ff40;
-		text-align: center;
-	}
-	
-	#aside{
-		min-height: inherit;
-		background: pink;
-		width:205px;
-		float:left;
-	}
-	
-	#main{
-		min-height: inherit;		
-		background: white;
-		width:205px;
-		float:left;
-	}
-	
-	#main::after{
-		content: "동생이야~";
-		display: block;
-		clear:left;
-	}
-
-#footer{
-	height: 100px;
-	background: black;
-	
-}
-
-	#footer>div{
-		width:960px;
-		height:100%;
-		margin-left:auto;
-		margin-right:auto;
-		background: #0000ff40;
-		text-align: center;
-	}

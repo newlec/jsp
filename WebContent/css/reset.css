@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-
 /* 요소(element) 여백 초기화  */
 html, body,
 div, span,
-dl, dt, dd, ul, ol, li,
+dl, dt, dd, 
+ul, ol, li,
 h1, h2, h3, h4, h5, h6,
 blockquote, p, address, pre, cite,
 form, fieldset, input, textarea, select,
@@ -23,7 +23,9 @@ h1, h2, h3, h4, h5, h6 {
 fieldset, img, abbr,acronym { border:0 none; } 
 
 /* 목록 */
-ol, ul { list-style:none; margin: 0; padding: 0;}
+ol, ul { 
+	list-style:none; 	
+}
 
 /* 테이블 - 마크업에 'cellspacing="0"' 지정 함께 필요 */
 table {

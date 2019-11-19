@@ -1,5 +1,23 @@
 package com.newlecture.web.controller.admin.board;
 
+// CSS -> 중요하죠... javascript -> DOM + CSSOM
+/*
+ 	Selector -> 기본 + 복합연산자+슈도클래스+슈도엘리먼트
+ 	스타일의 기본 단위는 : 방 + 콘텐츠 블록
+ 	방 : div, header, ... -> 기본 너비, 높이 ? -> 100%, 0%
+ 	                           -> 기본 레이아웃(배치) -> 수직방향의 적재
+ 	                           
+ 	방을 스타일링 -> 수직방향으로 방을 적재 하는데 크기를 설정
+ 						-> 수평방향으로 적재하는 방법
+ 							-> 방법 1 : Old 한 방법
+ 									 float:left,  clear.. 슈도 엘리먼트(clear-fix)
+ 							     방법 2 : new 한 방법
+ 							         선형 레이아웃을 위한 flex
+ 							         격자형 레이아웃을 위한 grid(*)
+ 							         
+    큰방(height/width) -> 두째방(margin-left:auto) -> 세째방(float, flex)
+
+ */
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
