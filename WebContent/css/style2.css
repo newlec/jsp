@@ -1,5 +1,10 @@
 @import url(layout2.css);
 
+
+.d-none{
+    display: none;
+}
+
 /* 콘텐츠를 수납하는 가구를 꾸미는 곳 */
 
 body{
@@ -20,3 +25,25 @@ body{
     text-indent: -999px;
     overflow: hidden;
 }
+
+#main-menu{
+
+}
+
+    #main-menu>ul{
+        display: flex;
+
+        font-family: "맑은 고딕", 고딕, Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color:#000;
+    }
+
+        #main-menu>ul>li{
+            padding-left: 24px;
+            background: url(../images/bg-main-menu-vsp.png) no-repeat 12px center;
+        }
+
+            #main-menu a:hover{
+                color:#ff6a00;
+            }
